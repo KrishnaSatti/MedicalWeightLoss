@@ -187,7 +187,7 @@ export default function ProfilePage(props) {
       <Header
         color="transparent"
         href=""
-        brand="Pain and Regenerative Care New Jersey"
+        brand="Virtual Medical Weight Loss"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{

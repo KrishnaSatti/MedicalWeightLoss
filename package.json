@@ -1,12 +1,13 @@
 {
   "name": "material-kit-react",
   "version": "1.8.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "description": "Medical Weight Loss",
   "private": true,
   "main": "dist/index.js",
   "dependencies": {
     "@material-ui/core": "^4.3.2",
     "@material-ui/icons": "4.2.1",
+    "aws": "0.0.3-2",
     "bootstrap": "^4.5.0",
     "classnames": "2.2.6",
     "history": "4.9.0",
@@ -41,6 +42,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
+    "deploy": "aws s3 sync build/ s3://medicalweightlossfightobesity.com",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
